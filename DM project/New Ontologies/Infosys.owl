@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Infosys "http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2016/3/Infosys.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:Infosys="http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#hasLocation_of_Work -->
+
+    <owl:DatatypeProperty rdf:about="#hasLocation_of_Work">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#hasName_of_Job -->
+
+    <owl:DatatypeProperty rdf:about="#hasName_of_Job">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#hasOrg_mail -->
+
+    <owl:DatatypeProperty rdf:about="#hasOrg_mail">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#hasPublish_date -->
+
+    <owl:DatatypeProperty rdf:about="#hasPublish_date">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#hasWork_ex_Req -->
+
+    <owl:DatatypeProperty rdf:about="#hasWork_ex_Req">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#hascomp -->
+
+    <owl:DatatypeProperty rdf:about="#hascomp">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#Vacancy -->
+
+    <owl:Class rdf:about="#Vacancy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#inf01 -->
+
+    <owl:Thing rdf:about="#inf01">
+        <rdf:type rdf:resource="#Vacancy"/>
+        <hasPublish_date rdf:datatype="&xsd;date">05/04/2016</hasPublish_date>
+        <hasWork_ex_Req rdf:datatype="&xsd;nonNegativeInteger">4</hasWork_ex_Req>
+        <hasLocation_of_Work rdf:datatype="&xsd;string">Bangalore</hasLocation_of_Work>
+        <hascomp rdf:datatype="&xsd;string">Java</hascomp>
+        <hasName_of_Job rdf:datatype="&xsd;string"
+            >Senior Java Dev.</hasName_of_Job>
+        <hasOrg_mail rdf:datatype="&xsd;string">bizu@infy.in</hasOrg_mail>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#inf02 -->
+
+    <Vacancy rdf:about="#inf02">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <hasPublish_date rdf:datatype="&xsd;date">05/03/2016</hasPublish_date>
+        <hasWork_ex_Req rdf:datatype="&xsd;nonNegativeInteger">2</hasWork_ex_Req>
+        <hascomp rdf:datatype="&xsd;string">Java</hascomp>
+        <hasName_of_Job rdf:datatype="&xsd;string">Jr. Java Dev</hasName_of_Job>
+        <hasLocation_of_Work rdf:datatype="&xsd;string">Mumbai</hasLocation_of_Work>
+        <hasOrg_mail rdf:datatype="&xsd;string"
+            >bizumum@infy.co.in</hasOrg_mail>
+    </Vacancy>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#inf03 -->
+
+    <Vacancy rdf:about="#inf03">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <hasWork_ex_Req rdf:datatype="&xsd;nonNegativeInteger">0
+</hasWork_ex_Req>
+        <hasPublish_date rdf:datatype="&xsd;date">02/04/2016</hasPublish_date>
+        <hasName_of_Job rdf:datatype="&xsd;string"
+            >Application Engineer </hasName_of_Job>
+        <hasLocation_of_Work rdf:datatype="&xsd;string">Delhi</hasLocation_of_Work>
+        <hascomp rdf:datatype="&xsd;string">Python</hascomp>
+        <hasOrg_mail rdf:datatype="&xsd;string"
+            >bizudel@infy.co.in</hasOrg_mail>
+    </Vacancy>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Infosys.owl#inf04 -->
+
+    <owl:Thing rdf:about="#inf04">
+        <rdf:type rdf:resource="#Vacancy"/>
+        <hasPublish_date rdf:datatype="&xsd;date">04/04/2016</hasPublish_date>
+        <hasWork_ex_Req rdf:datatype="&xsd;nonNegativeInteger">7</hasWork_ex_Req>
+        <hasName_of_Job rdf:datatype="&xsd;string"
+            >Application Analyst</hasName_of_Job>
+        <hasLocation_of_Work rdf:datatype="&xsd;string">Chennai</hasLocation_of_Work>
+        <hascomp rdf:datatype="&xsd;string">Python</hascomp>
+        <hasOrg_mail rdf:datatype="&xsd;string"
+            >bizuchen@infy.ac.in</hasOrg_mail>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

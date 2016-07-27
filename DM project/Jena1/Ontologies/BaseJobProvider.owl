@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY JobProvide "http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:JobProvide="http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Begin_date -->
+
+    <owl:DatatypeProperty rdf:about="#Begin_date">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#End_date -->
+
+    <owl:DatatypeProperty rdf:about="#End_date">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Identifier -->
+
+    <owl:DatatypeProperty rdf:about="#Identifier">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;ID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Job_Description_ -->
+
+    <owl:DatatypeProperty rdf:about="#Job_Description_">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Job_Name -->
+
+    <owl:DatatypeProperty rdf:about="#Job_Name">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Max_age -->
+
+    <owl:DatatypeProperty rdf:about="#Max_age">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Requires_competence -->
+
+    <owl:DatatypeProperty rdf:about="#Requires_competence">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Telephone -->
+
+    <owl:DatatypeProperty rdf:about="#Telephone">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#Work_Location -->
+
+    <owl:DatatypeProperty rdf:about="#Work_Location">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#employment_agent -->
+
+    <owl:DatatypeProperty rdf:about="#employment_agent">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#hasOrgEmail -->
+
+    <owl:DatatypeProperty rdf:about="#hasOrgEmail">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#hasOrganizationName -->
+
+    <owl:DatatypeProperty rdf:about="#hasOrganizationName">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#has_compensation -->
+
+    <owl:DatatypeProperty rdf:about="#has_compensation">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#publication_date -->
+
+    <owl:DatatypeProperty rdf:about="#publication_date">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#requires_work_experience -->
+
+    <owl:DatatypeProperty rdf:about="#requires_work_experience">
+        <rdfs:domain rdf:resource="#JobVacancy"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/2/JobProvide.owl#JobVacancy -->
+
+    <owl:Class rdf:about="#JobVacancy"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

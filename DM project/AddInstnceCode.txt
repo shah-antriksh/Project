@@ -1,0 +1,50 @@
+//Code to Add Instance
+
+// Get Class Object
+OntClass jseeker=model.getOntClass("http://www.semanticweb.org/ontologies/2016/2/JobSeeker.owl#Job_Seeker");
+
+// Create object of Individual
+Individual jseeker1=jseeker.createIndividual(ns+"asp03");
+
+
+//Declaration of All Properties of JobSeeker Class
+
+		    
+		    OntProperty fname=model.getOntProperty(ns+"hasFirst_Name");
+		    OntProperty lname=model.getOntProperty(ns+"hasLast_Name");
+		    OntProperty email=model.getOntProperty(ns+"hasEmail");
+		    OntProperty country=model.getOntProperty(ns+"livesInCountry");
+		    OntProperty mno=model.getOntProperty(ns+"hasMobileNo");
+		    OntProperty dob=model.getOntProperty(ns+"hasDate_of_Birth");
+		    OntProperty gender=model.getOntProperty(ns+"hasGender");
+		    OntProperty ref=model.getOntProperty(ns+"hasReferences");
+		    OntProperty adrs=model.getOntProperty(ns+"hasAddress");
+			
+			
+			
+// Add Value into Individual
+
+			jseeker1.addLiteral(fname, "Antriksh");
+		    jseeker1.addLiteral(lname, "Shah");
+		    jseeker1.addLiteral(email, "as@mit.edu");
+		    jseeker1.addLiteral(country, "India");
+		    jseeker1.addLiteral(mno, -23452);
+		    jseeker1.addLiteral(dob, "1991/05/03");
+		    jseeker1.addLiteral(gender, "Male");
+		    jseeker1.addLiteral(ref, "Dharam Uandkat");
+		    jseeker1.addLiteral(adrs, "IIIT B");
+			
+// Persist Individual
+
+FileWriter out=null;
+		    try{
+		    out=new FileWriter("Ontology/JobSeeker.owl");
+		    
+		    model.write(out, "RDF/XML-ABBREV");
+		    System.out.println("Wrote to file");
+		    }
+		    finally {
+		        if (out != null) 
+		           out.close();
+		        }
+

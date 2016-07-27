@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Tcs "http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#" >
+    <!ENTITY hasJob "http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#hasJob&#39;" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2016/3/Tcs.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Tcs="http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:hasJob="&Tcs;hasJob&#39;">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#expreqrd -->
+
+    <owl:DatatypeProperty rdf:about="#expreqrd">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#hasJob&#39;sName -->
+
+    <owl:DatatypeProperty rdf:about="#hasJob&#39;sName">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#hascomp_rqrds -->
+
+    <owl:DatatypeProperty rdf:about="#hascomp_rqrds">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#hasorganzationmail -->
+
+    <owl:DatatypeProperty rdf:about="#hasorganzationmail">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#hasorgnames -->
+
+    <owl:DatatypeProperty rdf:about="#hasorgnames">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#haswrklcn -->
+
+    <owl:DatatypeProperty rdf:about="#haswrklcn">
+        <rdfs:domain rdf:resource="#Vacancy"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#Vacancy -->
+
+    <owl:Class rdf:about="#Vacancy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#tcs01 -->
+
+    <owl:Thing rdf:about="#tcs01">
+        <rdf:type rdf:resource="#Vacancy"/>
+        <expreqrd rdf:datatype="&xsd;nonNegativeInteger">5</expreqrd>
+        <hascomp_rqrds rdf:datatype="&xsd;string">Java</hascomp_rqrds>
+        <haswrklcn rdf:datatype="&xsd;string">Mumbai</haswrklcn>
+        <hasJob:sName rdf:datatype="&xsd;string">System Analyst</hasJob:sName>
+        <hasorgnames rdf:datatype="&xsd;string">TCS</hasorgnames>
+        <hasorganzationmail rdf:datatype="&xsd;string"
+            >bizumum@tcs.co.in</hasorganzationmail>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#tcs02 -->
+
+    <owl:Thing rdf:about="#tcs02">
+        <rdf:type rdf:resource="#Vacancy"/>
+        <expreqrd rdf:datatype="&xsd;nonNegativeInteger">3</expreqrd>
+        <hasJob:sName rdf:datatype="&xsd;string">ABAP Developer</hasJob:sName>
+        <haswrklcn rdf:datatype="&xsd;string">Ahmedabad</haswrklcn>
+        <hascomp_rqrds rdf:datatype="&xsd;string">SAP ABAP</hascomp_rqrds>
+        <hasorgnames rdf:datatype="&xsd;string">TCS</hasorgnames>
+        <hasorganzationmail rdf:datatype="&xsd;string"
+            >bizuahd@tcs.co,in</hasorganzationmail>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2016/3/Tcs.owl#tcs03 -->
+
+    <owl:Thing rdf:about="#tcs03">
+        <rdf:type rdf:resource="#Vacancy"/>
+        <expreqrd rdf:datatype="&xsd;nonNegativeInteger">0</expreqrd>
+        <haswrklcn rdf:datatype="&xsd;string">Delhi</haswrklcn>
+        <hascomp_rqrds rdf:datatype="&xsd;string">Java</hascomp_rqrds>
+        <hasJob:sName rdf:datatype="&xsd;string">Jr. Developer</hasJob:sName>
+        <hasorgnames rdf:datatype="&xsd;string">TCS</hasorgnames>
+        <hasorganzationmail rdf:datatype="&xsd;string"
+            >bizudel@tcs.co.in</hasorganzationmail>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,50 @@
+TCS
+Job 1:
+Job Name = System Analyst
+Max Age = 32
+Competence = Java
+Exp = 5 years
+Work Location = Mumbai
+
+Job 2:
+Job Name = AbApp developer
+Max Age = 30
+Competence = SAP ABAP
+Exp = 3 years
+Work Location = Ahmedabad
+
+Job 3:
+Job Name = Junior Develpoer
+Max Age = 25 
+Competence = Java
+Exp = 0 years
+Work Location = Delhi
+
+Infosys
+Job 1:
+Job Name = Senior Java Develpoer
+Max Age = 30 
+Competence = Java
+Exp = 4 years
+Work Location = "Bangalore"
+
+Job 2:
+Job Name = Junior Java Develpoer
+Max Age = 25 
+Competence = Java
+Exp = 2 years
+Work Location = "Mumbai"
+
+Job 3:
+Job Name = Application Engineer
+Max Age = 28 
+Competence = Python
+Exp = 0 years
+Work Location = "Delhi"
+
+Job 4:
+Job Name = Application Analyst
+Max Age = 35 
+Competence = Python
+Exp = 7 years
+Work Location = "Chennai"
